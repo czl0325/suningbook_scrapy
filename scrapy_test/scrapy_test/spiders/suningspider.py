@@ -23,20 +23,18 @@ class SuningspiderSpider(scrapy.Spider):
         item = SunningBookItem()
         li_list = response.xpath("//ul[@class='clearfix']/li")
         for li in li_list:
-            # item["cover"] = li.xpath(
-            #     "//div[@class='wrap']//div[@class='res-img']//a//img[@class='search-loading']/@src2").extract_first()
-            # print()
+            item["cover"] = li.xpath("//div[@class='wrap']//div[@class='res-img']//a//img[@class='search-loading']/@src2").extract_first()
             item["title"] = li.xpath(".//div[@class='wrap']//p[@class='sell-point']/a/text()").extract_first()
             p_id1 = li.xpath(".//div[@class='wrap']/input/@vendor").extract_first()
             p_id2 = li.xpath(".//div[@class='wrap']/input/@datapro").extract_first()
             p_id2 = re.sub("[^\d]*\d*$", "", p_id2)
-            print(p_id2)
-            # detail_url = "https://product.suning.com/{}/{}.html".format(p_id1, p_id2)
-            # yield scrapy.Request(
-            #     detail_url,
-            #     callback=self.book_detail,
-            #     meta={"item": item}
-            # )
+            p_id2 = re.sub("^[^\d]*", "", p_id2)
+            detail_url = "https://product.suning.com/{}/{}.html".format(p_id1, p_id2)
+            yield scrapy.Request(
+                detail_url,
+                callback=self.book_detail,
+                meta={"item": item}
+            )
 
     def parse_booklist(self, response):
         item = response.meta.get("item")
@@ -50,6 +48,8 @@ class SuningspiderSpider(scrapy.Spider):
             print(item)
 
     def book_detail(self, response):
+        print(response.url)
         item = response.meta.get("item")
+        # //*[@id="mainPrice"]/dl[1]/dd/span[1]
         price = response.xpath("//*[@id='mainPrice']/dl[1]/dd/span[1]//text()")
-        print("价格=",price)
+        print("价格=", price)

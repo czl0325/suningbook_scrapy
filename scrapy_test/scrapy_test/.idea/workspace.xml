@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="877ed1c4-b09e-44ca-8fbb-0104ae322fed" name="Default Changelist" comment="" />
+    <list default="true" id="877ed1c4-b09e-44ca-8fbb-0104ae322fed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scrapy_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scrapy_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spiders/suningspider.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/suningspider.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583301732783</updated>
       <workItem from="1583301735119" duration="8252000" />
+      <workItem from="1583320961061" duration="3814000" />
     </task>
     <servers />
   </component>
@@ -81,6 +87,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="240" y="67" key="#Notifications/0.0.1280.800@0.0.1280.800" timestamp="1583302995389" />
+    <state x="753" y="522" key="FileChooserDialogImpl" timestamp="1583331366592">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="753" y="522" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1583331366592" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1583303206862">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -97,10 +107,11 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1583303206861" />
-    <state x="141" y="39" key="SettingsEditor" timestamp="1583303734262">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="474" y="409" key="SettingsEditor" timestamp="1583331389200">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="141" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1583303734262" />
+    <state x="474" y="409" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1583331389200" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/scrapy_test$suningspider.coverage" NAME="suningspider Coverage Results" MODIFIED="1583303178318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spiders" />
